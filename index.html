@@ -294,7 +294,7 @@ a[data-testid="avito-reviews-link"]::before {
     logos.forEach(function(el) {
       var nameSpan = el.querySelector('span:first-child');
       if (nameSpan) {
-        nameSpan.textContent = 'Сергей';
+        nameSpan.textContent = 'Грузоперевозки';
         nameSpan.className = 'custom-owner-name';
       }
     });
@@ -302,7 +302,7 @@ a[data-testid="avito-reviews-link"]::before {
       if (el.children && el.children.length >= 2) {
         var first = el.children[0];
         if (first && first.tagName === 'DIV' && first.textContent.trim() === '') {
-          first.textContent = 'Сергей';
+          first.textContent = 'Грузоперевозки';
           first.className = 'custom-owner-name';
         }
       }
