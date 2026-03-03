@@ -70,7 +70,7 @@ body{background:#09090b;color:#fafafa;font-family:'Manrope',sans-serif;-webkit-f
 </head><body>
 <!-- COVER HERO -->
 <section class="hero">
-  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1694715669993-ea0022b470f7?w=1920&auto=format&fit=crop&q=80')"></div>
+  <div class="hero-bg" style=""></div>
   <div class="hero-overlay-1"></div>
   <div class="hero-overlay-2"></div>
   <div class="blob" style="top:25%;right:33%;width:20rem;height:20rem;background:radial-gradient(circle,rgba(249,115,22,.06),transparent 70%)"></div>
@@ -347,6 +347,26 @@ a[data-testid="avito-reviews-link"]::before {
   }
 })();
 </script>
+
+<style>
+/* === NO-BG SECTION-COLORS PATCH === */
+.hero-bg{background-image:none!important;background:linear-gradient(160deg,#0b0e1a 0%,#100810 45%,#08100e 100%)!important}
+.hero-overlay-1{background:linear-gradient(135deg,rgba(10,12,20,.88) 0%,rgba(10,12,20,.42) 100%)!important}
+.hero-overlay-2{background:linear-gradient(to right,rgba(8,10,18,.65) 0%,rgba(8,10,18,.28) 55%,transparent 100%)!important}
+[style*="unsplash.com"]{background-image:none!important}
+/* React section colors – чередуем тёмные фоны */
+#root>div>section:nth-of-type(1){background:#0d1117!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(2){background:#0a1209!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(3){background:#10090e!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(4){background:#0d1117!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(5){background:#0a0f14!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(6){background:#100d09!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(7){background:#0a1209!important;border-top:1px solid rgba(255,255,255,.04)!important}
+#root>div>section:nth-of-type(8){background:#0d1117!important;border-top:1px solid rgba(255,255,255,.04)!important}
+/* performer-wrap section */
+#performer-data{background:#080b10!important;border-top:1px solid rgba(255,255,255,.05)!important}
+.performer-wrap{background:transparent!important}
+</style>
 </body></html>
 <script>
 (function(){
